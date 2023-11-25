@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cricket Game</title>
+  <link rel="stylesheet" href="cricket.css">
+</head>
+<body>
+  <h1>Cricket Game</h1>
+
+  <button class="choice-button" onclick="
+  //Math.random() will generate random number between 1 & 3.
+  let computerChoice= generatecomputerChoice();
+  let resultMsg =getResult('Bat', computerChoice);
+  showResult('Bat',computerChoice ,resultMsg);
+  ">
+   <img src ="images/bat.png" alt="Bat Image" class="choice-image">
+  </button>
+
+  <button class="choice-button" onclick="
+  computerChoice =generatecomputerChoice();
+  resultMsg =getResult('Ball', computerChoice);
+  showResult('Ball',computerChoice ,resultMsg);
+  "><img src="images/ball.png" alt="Ball Image class" id="ball"></button>
+
+  <button class="choice-button" onclick ="
+  computerChoice=generatecomputerChoice();
+  resultMsg = getResult('Stump', computerChoice);
+  showResult('Stump',computerChoice ,resultMsg);
+  ">
+  <img src="images/stump.png" alt="Stump Image Class" class="choice-image" id="stump">
+</button>
+
+
+  <h3 id="user-move"></h3>
+  <h3 id="computer-move"></h3>
+  <h3 id="result"></h3>
+  <h3 id="score"></h3>
+
+  <button onclick="localStorage.clear()
+  resetScore();
+  " class="reset">Reset</button>
+
+  
+
+  <script src="cricket.js">
+    
+  </script>
+</body>
+</html>

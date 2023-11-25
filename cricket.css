@@ -1,0 +1,42 @@
+body{
+  text-align: center;
+}
+
+.choice-button{
+  width:100px;
+  border: none;
+  margin: 6px;
+  background-color: #DAAD86;
+  border-radius: 22px;
+  cursor: pointer;
+}
+
+.choice-image{
+  width:70px;
+}
+
+#stump{
+  height:110px;
+}
+
+
+body{
+  background-color: #659DBD;
+}
+
+.reset{
+  cursor: pointer;
+  background-color: #c5bab1;
+  font-size: large;
+  border-radius: 12px;
+}
+
+body h1{
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-variant: small-caps;
+  
+}
+
+
